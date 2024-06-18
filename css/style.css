@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* 全体共通 */
+* {box-sizing: border-box;}
+/* https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing */
+
+body {
+  margin: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック", "Yu Gothic", sans-serif;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+p{
+  color: aliceblue;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+}
+
+h2{
+  color: red;
+  font-size: 58px;
+}
+
+img{vertical-align: bottom;}
+
+header{
+  width: 100%;
+  height: auto;
+  min-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.head-content{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img{
+  width: 180px;
+  height: auto;
+  margin: 10px;
+}
+
+nav{
+  width: 700px;
+  height: auto;
+  margin-left: auto;
+}
+
+.head-select{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.head-select a{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+article{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer{
+  width: 100%;
+  min-width: 1000px;
+  height: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+
+.footer-select{
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 30px auto;
+}
+
+.footer-select a{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.copyright{
+  color: red;
+  margin: 50px 0;
+}
+/* home */
+.slide-img{
+  margin: 0 0 10px 0;
+	width:100%;
+  min-width: 1000px;
+	height:auto;
+  margin: 0;
+}
+
+.slide-img img{width: 100%;}
+
+.top-text-content{
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  min-width: 1000px;
+  height: auto;
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.top-banner-wrap{
+  width: 100%;
+  min-width: 1000px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-banner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-banner-content a{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.top-banner-content img{
+  width: 300px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.top-banner-content img:hover{
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+/* story */
+
+.thumbnail{
+  margin: 0 0 10px 0;
+	width:100%;
+  min-width: 1000px;
+}
+
+.thumbnail img{width: 100%;}
+
+.story-wrap{
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 40px;
+  margin: 30px 0;
+}
+
+.story-content{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.story-text-content{padding: 15px 0;}
+
+.story-text-content p{
+  margin-bottom: 3rem;
+}
+
+.story-img-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.story-img-content img{
+  width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* chara */
+
+.chara-wrap{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 30px 0;
+  padding: 30px;
+}
+
+.charas{
+  display: flex;
+  margin: 90px 0;
+}
+
+.charas:last-child{margin-bottom: 50px;}
+
+.chara-text-content{width: 500px;}
+
+.chara-text-content h3{
+  font-size: 42px;
+  color: aliceblue;
+  margin: 0;
+}
+
+.chara-text-content h4{
+  font-size: 24px;
+  color: aliceblue;
+  margin: 0 0 2rem 0;
+}
+
+.charas img{
+  width: 450px;
+  margin-left: 20px;
+}
+
+/* voicecast */
+
+.voicecast-wrap{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 30px 0;
+  padding: 30px;
+}
+
+.casts{
+  display: flex;
+  margin: 90px 0;
+}
+
+.casts-text{
+  width: 500px;
+  text-align: right;
+}
+
+.casts-text h3{
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.casts-text h4{
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.casts img{
+  width: 500px;
+  margin-left: 20px;
+}
